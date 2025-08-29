@@ -222,7 +222,7 @@ def tutorial_round():
 @login_required
 @app.route('/flag', methods=['GET'])
 def flag():
-    flagStr = 'CTF{hunt3rXhunt3r}'
+    flagStr = 'NGP{hunt3rXhunt3r}'
     user = User.query.filter_by(id=current_user.id).one_or_none()
     if user.score >= 25:
         return render_template('flag.html', flag=flagStr)
