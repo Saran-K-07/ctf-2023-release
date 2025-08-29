@@ -4,3 +4,4 @@ flask-csp
 flask-login
 flask-wtf
 flask-sqlalchemy
+gunicorn
